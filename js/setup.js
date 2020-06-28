@@ -120,10 +120,10 @@ userNameInput.addEventListener('input', function () {
   var valueLength = userNameInput.value.length;
 
   if (valueLength < MIN_NAME_LENGTH) {
-    userNameInput.setCustomValidity('Ещё ' + (MIN_NAME_LENGTH - valueLength) +' симв.');
+    userNameInput.setCustomValidity('Ещё ' + (MIN_NAME_LENGTH - valueLength) + ' симв.');
 
   } else if (valueLength > MAX_NAME_LENGTH) {
-    userNameInput.setCustomValidity('Удалите лишние ' + (valueLength - MAX_NAME_LENGTH) +' симв.');
+    userNameInput.setCustomValidity('Удалите лишние ' + (valueLength - MAX_NAME_LENGTH) + ' симв.');
   } else {
     userNameInput.setCustomValidity('');
   }
@@ -148,8 +148,3 @@ setupFireballWrap.addEventListener('click', function () {
   setupFireballWrap.style.background = setupNewColor(FIREBALL_COLOR, randomData);
   fireballColorInput.value = setupNewColor(FIREBALL_COLOR, randomData);
 });
-
-
-
-
-
